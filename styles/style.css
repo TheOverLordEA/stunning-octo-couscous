@@ -1,3 +1,8 @@
+:root {
+  --main-text-color: rgb(110, 109, 109);
+  --main-btn-bg: rgba(0, 50, 0);
+}
+
 /* Box Model Hack */
 * {
   box-sizing: border-box;
@@ -8,6 +13,7 @@
 /*******************************************/
 
 body {
+  background: rgba(254, 255, 180, 0.26);
 }
 
 /******************************************
@@ -22,3 +28,42 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  padding: 1rem;
+  min-width: 33.3333%;
+  align-items: center;
+}
+
+a {
+  font-size: large;
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.nav-items--left {
+  justify-content: center;
+}
+
+.nav-items--center {
+  justify-content: space-around;
+
+  margin-right: 1rem;
+}
+
+.nav-items--right {
+  justify-content: center;
+}
+
+.nav-btn {
+  margin-left: 1rem;
+  padding: 1rem;
+  background: var(--main-btn-bg);
+  color: white;
+}
