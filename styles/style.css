@@ -1,6 +1,7 @@
 :root {
-  --main-text-color: rgb(110, 109, 109);
-  --main-btn-bg: rgba(0, 50, 0);
+  --bg-color-black: rgba(0, 0, 0);
+
+  --text-color-white: rgba(255, 255, 255);
 }
 
 /* Box Model Hack */
@@ -20,6 +21,9 @@ body {
 /* LAYOUT
 /*******************************************/
 header {
+  display: flex;
+  background-color: var(--bg-color-black);
+  color: var(--text-color-white);
 }
 
 footer {
@@ -28,3 +32,24 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+nav {
+  display: flex;
+
+  padding: 1rem;
+  min-width: 100%;
+  align-items: center;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-right--content {
+  width: 25%;
+}
+.nav-left--content {
+  flex: 1;
+  justify-content: flex-end;
+}
