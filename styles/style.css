@@ -43,17 +43,50 @@ nav {
 .nav-content {
   display: flex;
   align-items: center;
-  padding: 1rem;
+}
+
+.nav-left--content {
+  width: 25%;
+  margin-left: 2.8rem;
 }
 
 .nav-right--content {
-  width: 25%;
-}
-.nav-left--content {
   flex: 1;
   justify-content: flex-end;
 }
 
-.nav-left--content > button {
-  margin-left: 1rem;
+.nav-content--item {
+  font-size: 1.2rem;
+  color: var(--text-color-white);
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.nav-right--logo {
+  border-right: 1px solid white;
+  font-weight: 800;
+
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.nav-right--btn {
+  color: var(--text-color-white);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.3rem;
+
+  font-size: large;
+}
+
+.nav-btn--submit {
+  background: rgb(21, 21, 21);
+  border: 1px solid white;
+  letter-spacing: 1px;
+  margin-right: 1rem;
+}
+
+.nav-btn--signIn {
+  background-color: #4c5fd5;
+  border: none;
+  margin-right: 2.8rem;
 }
