@@ -15,6 +15,7 @@
 
 body {
   background: rgba(254, 255, 180, 0.26);
+  height: 100vh;
 }
 
 /******************************************
@@ -89,4 +90,40 @@ nav {
   background-color: #4c5fd5;
   border: none;
   margin-right: 2.8rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 50%;
+  background: #dadbf1;
+  justify-content: center;
+  align-items: center;
+}
+
+main > h1 {
+  font-size: 4rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.input-form {
+  position: relative;
+  display: inline-block;
+}
+
+.input-form > input {
+  min-width: 700px;
+  max-width: 1000px;
+  padding: 0.8rem 1rem;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+}
+
+.input-form::before {
+  position: absolute;
+  content: image-set("/assets/right-arrow-alt-regular-24.png");
+  top: 0;
+  right: 5px;
 }
